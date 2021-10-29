@@ -117,7 +117,13 @@ int aufgabe3(){
   loesung1  = ((-b)+sqrt(b*b-4*a*c))/(2*a);
   loesung2  = ((-b)-sqrt(b*b-4*a*c))/(2*a);
 
-  printf("%f %f", loesung1,loesung2);
-
+  if((b*b-4*a*c) < 0){
+    printf("Die Gleichung hat keine reellen Nullstellen");
+  }else if((+sqrt(b*b-4*a*c)) == (-sqrt(b*b-4*a*c))){
+    printf("Die Nullstelle ist %f",loesung1);
+  }
+  else{
+    printf("Die Nullstellen sind %f %f", loesung1,loesung2);
+  }
   return 0;
 }
