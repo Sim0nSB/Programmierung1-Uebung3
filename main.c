@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 
 int aufgabe1(), aufgabe2(), aufgabe3(), aufgabe4(), aufgabe5(), aufgabe6();
@@ -7,8 +8,8 @@ int aufgabe1(), aufgabe2(), aufgabe3(), aufgabe4(), aufgabe5(), aufgabe6();
 int main(void) {
 
   //aufgabe1();
-  aufgabe2();
-  //aufgabe3();
+  //aufgabe2();
+  aufgabe3();
   //aufgabe4();
   //aufgabe5();
   //aufgabe6();
@@ -16,6 +17,7 @@ int main(void) {
 
 }
 
+//Aufgabe1
 int aufgabe1(){
 
   int zahl1, zahl2, zahl3, temp;
@@ -100,6 +102,22 @@ int aufgabe2(){
     case 8: printf("acht"); break;
     case 9: printf("neun"); break;
   }
+
+  return 0;
+}
+
+
+//Aufgabe3
+int aufgabe3(){
+
+  float a,b,c,loesung1,loesung2;
+  printf("Geben Sie a b und c ein: ");
+  scanf("%f %f %f", &a, &b, &c);
+
+  loesung1  = ((-b)+sqrt(b*b-4*a*c))/(2*a);
+  loesung2  = ((-b)-sqrt(b*b-4*a*c))/(2*a);
+
+  printf("%f %f", loesung1,loesung2);
 
   return 0;
 }
