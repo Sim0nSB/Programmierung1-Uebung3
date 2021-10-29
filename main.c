@@ -6,8 +6,8 @@ int aufgabe1(), aufgabe2(), aufgabe3(), aufgabe4(), aufgabe5(), aufgabe6();
 
 int main(void) {
 
-  aufgabe1();
-  //aufgabe2();
+  //aufgabe1();
+  aufgabe2();
   //aufgabe3();
   //aufgabe4();
   //aufgabe5();
@@ -75,4 +75,31 @@ int aufgabe1(){
     zahl2 = temp;
   }
   */
+}
+
+
+
+//Aufgabe 2
+int aufgabe2(){
+
+  int zahl, letzteStelle;
+  printf("Geben Sie eine Zahl ein: ");
+  scanf("%d", &zahl);
+
+  letzteStelle = zahl % 10;
+
+  switch(letzteStelle){
+    case 0: printf("null"); break;
+    case 1: printf("eins"); break;
+    case 2: printf("zwei"); break;
+    case 3: printf("drei"); break;
+    case 4: printf("vier"); break;
+    case 5: printf("fünf"); break;
+    case 6: printf("sechs"); break;
+    case 7: printf("sieben"); break;
+    case 8: printf("acht"); break;
+    case 9: printf("neun"); break;
+  }
+
+  return 0;
 }
