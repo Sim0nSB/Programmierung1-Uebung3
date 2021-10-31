@@ -9,15 +9,15 @@ int main(void) {
 
   //aufgabe1();
   //aufgabe2();
-  aufgabe3();
-  //aufgabe4();
+  //aufgabe3();
+  aufgabe4();
   //aufgabe5();
   //aufgabe6();
   //aufgabe7();
 
 }
 
-//Aufgabe1
+//Aufgabe 1
 int aufgabe1(){
 
   int zahl1, zahl2, zahl3, temp;
@@ -46,39 +46,7 @@ int aufgabe1(){
   printf("Die Reihenfolge lautet: %d %d %d", zahl1, zahl2, zahl3);
 
   return 0;
-
- // ------Müllll-----
-  /*if(zahl1 <= zahl2){
-    if(zahl2 <= zahl3){
-      //schon richtig sortiert 
-    }else if(zahl2 > zahl3){
-      //tausche zahl2 und zahl3
-      temp = zahl2;
-      zahl2 = zahl3;
-      zahl3 = temp;
-    }
-  }else if(zahl1 > zahl2){
-    //tausche zahl1 und zahl2
-    temp = zahl1;
-    zahl1 = zahl2;
-    zahl2 = temp;
-    if(zahl2 <= zahl3){
-      // fertig sortiert
-    }else if(zahl2 > zahl3){
-      //tause zahl2 und zahl3
-      temp = zahl2;
-      zahl2 = zahl3;
-      zahl3 = temp;
-    }
-  }else if(zahl1 > zahl2){
-    //tausche zahl1 und zahl2
-    temp = zahl1;
-    zahl1 = zahl2;
-    zahl2 = temp;
-  }
-  */
 }
-
 
 
 //Aufgabe 2
@@ -107,7 +75,7 @@ int aufgabe2(){
 }
 
 
-//Aufgabe3
+//Aufgabe 3
 int aufgabe3(){
 
   float a,b,c,loesung1,loesung2;
@@ -125,5 +93,12 @@ int aufgabe3(){
   else{
     printf("Die Nullstellen sind %f %f", loesung1,loesung2);
   }
+  return 0;
+}
+
+
+//Aufgabe 4
+int aufgabe4(){
+
   return 0;
 }
