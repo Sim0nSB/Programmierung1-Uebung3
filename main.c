@@ -10,8 +10,8 @@ int main(void) {
   //aufgabe1();
   //aufgabe2();
   //aufgabe3();
-  aufgabe4();
-  //aufgabe5();
+  //aufgabe4();
+  aufgabe5();
   //aufgabe6();
   //aufgabe7();
 
@@ -121,3 +121,22 @@ int aufgabe4(){
     return 0;
 }
 
+//Aufgabe 5
+int aufgabe5(){
+    
+   int input;
+   int reverse = 0;
+   printf("Geben Sie eine Zahl ein.\n");
+   scanf("%d", &input);
+   
+   while(input > 0) {
+       reverse = reverse * 10;
+       reverse = reverse + input % 10;
+       input = input / 10;
+   }
+   
+   printf("%d", reverse);
+   return 0;
+}
+
+//Aufgabe 6
