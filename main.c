@@ -99,6 +99,25 @@ int aufgabe3(){
 
 //Aufgabe 4
 int aufgabe4(){
-
-  return 0;
+    
+    double zahl;
+    
+    printf("Geben Sie eine Zahl ein: ");
+    scanf("%lf", &zahl);
+    
+	// Wir runden die dritte Stelle, indem wir auf die Stelle 5 addieren
+	double gerundet = (zahl+0.005);
+	// Das Komma um zwei Stellen nach rechts verschieben
+        gerundet = gerundet * 100;
+	// Durch den Cast mittels (int) betrachten wir nur den ganzzahligen Teil
+	gerundet = ((int) gerundet);
+	// Das Komma um zwei Stellen nach links verschieben
+	gerundet = gerundet / 100.0;
+    
+    // äquivalent: double gerundet = ((int) ((zahl + 0.005) * 100)) / 100.0;
+    
+    printf("Gerundet auf zwei Nachkommastellen: %lf", gerundet);
+    
+    return 0;
 }
+
