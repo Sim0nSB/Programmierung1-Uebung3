@@ -11,9 +11,9 @@ int main(void) {
   //aufgabe2();
   //aufgabe3();
   //aufgabe4();
-  aufgabe5();
-  //aufgabe6();
-  //aufgabe7();
+  //aufgabe5();
+  aufgabe6();
+  
 
 }
 
@@ -140,3 +140,35 @@ int aufgabe5(){
 }
 
 //Aufgabe 6
+int aufgabe6 () {
+    long number = 343955335201;
+    
+    long currentDivisor = 2;
+    int maxDivisor = 0;
+    
+    long durchlaeufe = 0;
+    
+    while(number > 1) {
+        durchlaeufe++;
+        if(number % currentDivisor == 0) {
+            number = number / currentDivisor;
+            
+            if(currentDivisor > maxDivisor) {
+                maxDivisor = currentDivisor;
+            }
+            
+            printf("%ld ", currentDivisor);
+            
+            currentDivisor = 2;
+        } else {
+            if(currentDivisor == 2) {
+                currentDivisor = currentDivisor + 1;
+            } else {
+                currentDivisor = currentDivisor + 2;
+            }
+        }
+    }
+    
+    printf("\nMax Divisor %d nach %ld Durchlaeufen gefunden.", maxDivisor, durchlaeufe);
+    return 0;
+}
